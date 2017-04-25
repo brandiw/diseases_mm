@@ -1,0 +1,13 @@
+<div class="text-center">
+  <h1>Disease List</h1>
+  <img src="http://charityworld.com/wp-content/uploads/2016/03/Cardiovascular-disease.jpg">
+  <br>
+  <h2>Pretty sure you have all of these</h2>
+  <% diseases.forEach(function(d){ %>
+    <a href="/diseases/<%= d.id %>">
+      <h3 class="text-danger">
+        <%= d.name %>
+      </h3>
+    </a>
+  <% }); %>
+</div>
