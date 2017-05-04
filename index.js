@@ -19,4 +19,4 @@ app.use("/diseases", require("./controllers/diseases"));
 app.use("/symptoms", require("./controllers/symptoms"));
 
 //Listen
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
